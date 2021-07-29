@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+
+:root {
+    --primary-color: #dfbd01;
+    --secondary-color: #6cbfd1;
+}
+
+body {
+    background: #2d333d;
+    color: #fff;
+    font-family: 'Courgette';
+    overflow-x: hidden;
+}
+
+section .container {
+    max-width: 1000px;
+}
+
+/* NAVBAR */
+
+.navbar-brand {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    color: var(--secondary-color);
+}
+
+.nav-link {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.nav-item:last-child .nav-link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.nav-item:last-child .nav-link:hover {
+    opacity: 0.9;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN SECTION */
+.main-header {
+    margin-top: 70px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Kaushan Script';
+}
+
+.main-header i {
+    color: var(--primary-color);
+}
+
+.main-header span {
+    color: var(--secondary-color);
+}
+
+/* ABOUT SECTION */
+
+#about {
+    background: #3e4550;
+    height: 80vh;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#about h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script';
+}
+
+.main-about .body p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.languages h3 {
+    color: var(--primary-color);
+    font-family: 'Kaushan Script';
+    font-size: 1.7rem;
+}
+
+.languages ul li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: var(--secondary-color);
+}
+
+/* PROJECTS */
+#projects {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.my-projects h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script';
+}
+
+.my-projects img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.my-projects .column {
+    position: relative;
+    transition: all 1s;
+    margin-bottom: 20px;
+    grid-gap: 10px;
+}
+
+.my-projects .column:hover {
+    transform: scale(1.05);
+}
+
+.my-projects .column:hover .details {
+    display: block;
+    opacity: 0.8;
+}
+
+.my-projects .details {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    height: 100%;
+    width: 90%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    background: #485c61;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.my-projects .lang {
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.my-projects .lang ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.my-projects .lang ul li {
+    list-style: none;
+    margin: 5px 5px 0 0;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: 'Kaushan Script';
+    text-align: center;
+}
+
+.my-projects .code-links a i {
+    text-decoration: none;
+    color: #dfbd01;
+    font-size: 2rem;
+    transition: all 0.6s ease-in-out;
+    padding-right: 1rem;
+}
+
+.my-projects .code-links a i:hover {
+    color: var(--secondary-color);
+}
+
+/* CONTACT */
+
+#contact {
+    background: #3e4550;
+    /* height: 40vh; */
+    padding-top: 50px;
+}
+
+#contact h1 {
+    font-family: 'Kaushan Script';
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    color: var(--primary-color);
+    font-family: 'Kaushan Script';
+    text-align: center;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+}
+
+.my-contact ul li {
+    font-size: 1.2rem;
+}
+
+.my-contact ul li span {
+    color: var(--secondary-color);
+    font-family: 'Kaushan Script';
+}
+
+.my-contact ul li, .social-media ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.social-media ul {
+    display: flex;
+}
+
+.social-media ul li {
+    margin: 20px;
+}
+
+.social-media ul li a {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.social-media ul li a:hover {
+    color: var(--primary-color);
+}
+
+footer {
+    background: #3e4550;
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Kaushan Script';
+    padding: 20px;
+    color: var(--primary-color);
+}
+
+@media(max-width: 900px) {
+    .contact {
+        display: block;
+    }
+
+    .contact h3 {
+        text-align: start;
+        margin-left: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .social-media ul {
+        margin-top: 0;
+    }
+
+    .social-media ul li {
+        margin: 15px;
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .main-header h1 {
+        font-size: 3rem;
+    }
+
+    .main-about .body p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    .languages ul li {
+        list-style: none;
+        padding: 0.7rem 0.5rem;
+        font-size: 1.3rem;
+        display: inline-block;
+        color: var(--secondary-color);
+    }
+
+    .my-projects h1 {
+        font-size: 2rem;
+        word-spacing: 2px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact h3 {
+        text-align: start;
+        margin-left: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .social-media ul {
+        margin-top: 0;
+    }
+
+    .social-media ul li {
+        margin: 15px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .my-projects .details {
+        height: 100%;
+        width: 90%;
+    }
+}
